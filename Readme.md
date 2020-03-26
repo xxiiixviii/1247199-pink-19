@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Polina Milekhina](https://up.htmlacademy.ru/adaptive/19/user/1247199).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Ничипорчук](https://htmlacademy.ru/profile/id612797).
 
 ---
 
