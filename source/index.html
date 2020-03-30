@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <img class="page-header__logo-image" src="#" width="75" height="22" alt="Логотип приложения Пинк">
+    <nav class="menu">
+      <button class="menu__toggle menu__toggle--open" type="button">Открыть меню</button>
+      <button class="menu__toggle menu__toggle--close" type="button">Закрыть меню</button>
+      <div class="menu__wrapper">
+        <ul class="menu__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="download">
+      <a class="download__btn button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+      <ul class="app-list">
+        <li class="app-list__item">
+          <a class="app-list__link app-list__link--iOS" href="https://www.apple.com/ru/ios/app-store/">Скачать
+            приложение для iOS</a>
+        </li>
+        <li class="app-list__item">
+          <a class="app-list__link app-list__link--android" href="https://play.google.com/store">Скачать приложение
+            для Android</a>
+        </li>
+        <li class="add-list__item">
+          <a class="add-list__link add-list__link--windows"
+            href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Скачать приложение для Windows</a>
+        </li>
+      </ul>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h2 class="page-main__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+    <section class="features">
+      <div class="features__wrapper">
+        <h2>Преимущества приложения</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="add-list__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+</body>
+
 </html>
