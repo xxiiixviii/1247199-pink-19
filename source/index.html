@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,20 +22,22 @@
             меню</span></button>
       </div>
       <nav class="menu">
-        <ul class="menu__list site-list">
-          <li class="site-list__item">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="menu__wrapper">
+          <ul class="menu__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <h1 class="menu__title menu__title--hand">Взгляните на жизнь иначе!</h1>
     </div>
@@ -53,7 +54,7 @@
           <li class="app-list__item">
             <a class="app-list__link app-list__link--android" href="https://play.google.com/store"><span
                 class="visually-hidden">Скачать приложение
-                для Android</span>
+                для Android</span></a>
           </li>
           <li class="app-list__item">
             <a class="app-list__link app-list__link--windows"
@@ -88,6 +89,14 @@
               <h3 class="features__subtitle">Заводит новых друзей</h3>
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
                 новых</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__subtitle">Эффект на 24 часа!</h3>
+              <p clas="features__description">Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!</p>
+              <a href="#" class="features__link">Узнать больше об исследовании</a>
             </li>
           </ul>
         </div>
