@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -20,36 +21,36 @@
             меню</span></button>
         <button class="menu__toggle menu__toggle--close" type="button"><span class="visually-hidden">Закрыть
             меню</span></button>
+        <nav class="menu">
+          <div class="menu__wrapper">
+            <ul class="menu__list site-list">
+              <li class="site-list__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="menu">
-        <div class="menu__wrapper">
-          <ul class="menu__list site-list">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <h1 class="menu__title">Фотографии пользователей</h1>
     </div>
   </header>
 
   <main class="page-main">
     <section class="posts">
-      <div class="container">
+      <div class="container flex">
         <h2 class="posts__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
           ваших?
         </h2>
-        <div class="posts__content post">
+        <div class="posts__content post post-first">
           <p class="post__flag">Панорама дня</p>
           <a class="post__image post__image--panorama" href="#"><span class="visually-hidden">Фотография</span></a>
           <p class="post__author-name">Анна
@@ -158,8 +159,8 @@
             <img src="img/logo-htmlacademy.svg" width="26" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
+      </div>
     </footer>
-    </div>
   </main>
 
 </body>
