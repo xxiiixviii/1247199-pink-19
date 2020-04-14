@@ -16,7 +16,7 @@
   position: absolute;
   width: 157px;
   height: 320px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 0 50px;
   background-repeat: no-repeat;
   left: 80px;
@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .features__list::after {
     content: "";
     position: absolute;
@@ -67,17 +68,20 @@
     top: 0;
     left: -300px;
   }
+
   .features-last {
     display: block;
     background-color: #ffffff;
     margin: 80px 25px 80px 330px;
     position: relative;
-    .features__subtitle {
-      font-size: 30px;
-      line-height: 36px;
-      color: #000000;
-    }
   }
+
+  .features__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
   .features-last::before {
     content: "";
     position: absolute;
@@ -88,7 +92,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     right: 350px;
-   }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -98,19 +102,23 @@
     color: #000000;
     text-align: center;
   }
+
   .features__description {
     text-align: center;
   }
+
   .features__list {
     display: flex;
     flex-direction: row;
     padding: 0 160px 150px 160px;
     margin: 0;
   }
+
   .features__list li {
     padding-top: 350px;
     position: relative;
   }
+
   .features__list li:first-child::before {
     content: "";
     position: absolute;
@@ -121,6 +129,7 @@
     background-repeat: no-repeat;
     top: 0;
   }
+
   .features__list li:nth-child(2n)::before {
     content: "";
     position: absolute;
@@ -131,6 +140,7 @@
     background-repeat: no-repeat;
     top: 0;
   }
+
   .features__list li:nth-child(3n)::before {
     content: "";
     position: absolute;
@@ -141,18 +151,22 @@
     background-repeat: no-repeat;
     top: 0;
   }
+
   .features__item {
     margin: 40px 0;
   }
+
   .features__list li:nth-child(2n) {
     margin-left: 90px;
     margin-right: 90px;
   }
+
   .features-last {
     background-color: #f2f2f2;
     padding: 115px 180px 115px 490px;
     margin: 0;
   }
+
   .features-last::before {
     content: "";
     position: absolute;
@@ -164,8 +178,9 @@
     background-size: 100%;
     right: 800px;
     top: 0;
-   }
-   .features-last .features__subtitle {
-     text-align: left;
-   }
+  }
+
+  .features-last .features__subtitle {
+    text-align: left;
+  }
 }
