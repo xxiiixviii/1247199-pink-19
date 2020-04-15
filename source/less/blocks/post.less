@@ -13,6 +13,7 @@
   text-align: center;
   padding: 11px 20px;
   background-color: #d22856;
+  width: 140px;
 }
 
 .post__image--panorama {
@@ -34,4 +35,16 @@
 .post__text {
   padding-bottom: 20px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .post {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post__text {
+    margin-bottom: auto;
+  }
 }

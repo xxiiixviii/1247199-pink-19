@@ -15,17 +15,14 @@ body {
   min-width: 320px;
 }
 
-.container {
-  width: 320px;
-}
-
 .flex {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-html {
+html,
+body {
   box-sizing: border-box;
   min-width: 320px;
 }
@@ -43,4 +40,20 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1200px;
+  }
 }
