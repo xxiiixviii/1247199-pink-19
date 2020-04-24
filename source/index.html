@@ -10,9 +10,9 @@
 
 <body>
 
-  <header class="page-header page-header--large">
+  <header class="page-header page-header--large page-header--large-opened">
     <div class="container">
-      <div class="page-header__menu flex">
+      <div class="page-header__menu page-header__menu--opened flex">
         <a class="page-header__logo"><span class="visually-hidden">Логотип приложения Пинк</span></a>
         <nav class="menu menu__toggle--opened">
           <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть
@@ -40,7 +40,7 @@
 
 
     <div class="container menu__title--index">
-      <h1 class="menu__title menu__title--hand">Взгляните на жизнь иначе!</h1>
+      <h1 class="menu__title menu__title--hand menu__title--hand-opened">Взгляните на жизнь иначе!</h1>
       <div class="download flex">
         <a class="download__btn button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="app-list flex">
@@ -68,8 +68,10 @@
 
   <main class="page-main">
     <div class="container">
-      <p class="page-main__title">Устали от серости мегаполиса?</p>
-      <p class="page-main__title">Нам есть, что вам предложить!</p>
+      <div class="page-main__title">
+        <p class="page-main__title--first">Устали от серости мегаполиса?</p>
+        <p class="page-main__title--second">Нам есть, что вам предложить!</p>
+      </div>
       <section class="features">
         <div class="features__wrapper">
           <h2 class="features__title visually-hidden">Преимущества приложения</h2>
@@ -103,7 +105,9 @@
     </div>
   </main>
 
-  <script src="js/menu.js"></script>
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/page-header-color.js"></script>
+  <script src="js/background-index.js"></script>
 
 </body>
 
