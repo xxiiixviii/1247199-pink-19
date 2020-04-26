@@ -2,6 +2,8 @@
   list-style: none;
   padding: 0 55px;
   margin: 0;
+  align-content: center;
+  align-items: center;
 }
 
 .app-list__link {
@@ -19,8 +21,8 @@
 
 .app-list__link--iOS {
   width: 47px;
-  height: 56px;
-  background-image: url("../../img/logo-apple.svg");
+  height: 59px;
+  background-image: url("../img/logo-apple.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -28,7 +30,7 @@
 .app-list__link--android {
   width: 43px;
   height: 47px;
-  background-image: url("../../img/logo-android.svg");
+  background-image: url("../img/logo-android.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -36,20 +38,22 @@
 .app-list__link--windows {
   width: 44px;
   height: 41px;
-  background-image: url("../../img/logo-microsoft.svg");
+  background-image: url("../img/logo-microsoft.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
   .app-list {
-    margin: 0 0 40px 65px;
+    margin: 0 0 30px 65px;
     padding: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .app-list {
-    margin-bottom: 60px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0 45px;
   }
 }

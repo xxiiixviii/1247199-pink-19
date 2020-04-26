@@ -12,7 +12,7 @@
   font-weight: 700;
   border: 3px solid #ffffff;
   border-radius: 50px;
-  margin: 28px 20px 40px;
+  margin: 30px 20px 40px;
   padding: 15px 20px;
 }
 
@@ -20,20 +20,22 @@
   font-family: "OpenSansLight", "Arial", sans-serif;
   color: #ffffff;
   font-weight: 300;
-  margin: 0 45px 35px 45px;
+  margin: 15px 45px 30px 45px;
+  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .download__text {
     font-size: 18px;
     margin: 0 0 45px 20px;
+    text-align: center;
   }
 
   .download {
-    position: absolute;
     background-color: transparent;
-    top: 650px;
+    position: relative;
     width: 320px;
+    padding-bottom: 66px;
   }
 
   .download__btn {
@@ -43,11 +45,17 @@
 
 @media (min-width: @desktop-width) {
   .download__btn {
-    margin-bottom: 75px;
+    margin: 0;
+    margin-bottom: 70px;
+    font-size: 21px;
+    padding: 18px 5px;
   }
 
   .download {
-    margin-left: 130px;
-    top: 460px;
+    margin: 50px 0 0 130px;
+  }
+
+  .download__text {
+    margin: 0 20px 45px 0;
   }
 }

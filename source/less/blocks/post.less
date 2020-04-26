@@ -1,23 +1,15 @@
-.post {
-  width: 280px;
-  padding: 25px 15px;
-  margin: 20px;
-  background-color: #f2f2f2;
-}
-
 .post__flag {
   font-family: "OpenSansBold", "Arial", sans-serif;
   color: #ffffff;
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  padding: 11px 20px;
+  padding: 5px 0;
   background-color: #d22856;
   width: 140px;
-}
-
-.post__image--panorama {
-  width: 320px;
+  position: absolute;
+  left: 157px;
+  top: -10px;
 }
 
 .post__author-name {
@@ -30,11 +22,31 @@
   font-family: "OpenSansLight", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .post__text {
-  padding-bottom: 20px;
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.post {
+  margin: 0 20px 20px;
+}
+
+.post--first {
+  margin: 0;
+  position: relative;
+}
+
+.post__image {
+  display: block;
+  height: 180px;
+}
+
+.post__image--panorama {
+  display: block;
+  height: 137px;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,6 +54,10 @@
     width: 270px;
     display: flex;
     flex-direction: column;
+  }
+
+  .post--first {
+    width: 620px;
   }
 
   .post__text {
