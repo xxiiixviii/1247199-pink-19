@@ -45,7 +45,11 @@
   display: none;
 }
 
-.features__list::before {
+.features {
+  background-color: #f2f2f2;
+}
+
+.features::before {
   content: "";
   position: absolute;
   background-color: white;
@@ -56,10 +60,6 @@
   right: 380px;
   transform: rotate(84deg);
   transform-origin: left bottom;
-}
-
-.features__wrapper {
-  background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
@@ -84,7 +84,7 @@
     }
   }
 
-  .features__list::before {
+  .features::before {
     content: "";
     position: absolute;
     background-color: white;
@@ -162,7 +162,7 @@
     margin: 0;
   }
 
-  .features__list::before {
+  .features::before {
     content: "";
     position: absolute;
     background-color: white;
