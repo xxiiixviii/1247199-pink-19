@@ -12,8 +12,8 @@
   margin: 20px 20px 20px 0;
   background-color: transparent;
   position: absolute;
-  top: 0;
-  left: 135px;
+  top: -65px;
+  right: 0;
   cursor: pointer;
 }
 
@@ -34,6 +34,7 @@
 .menu {
   background-color: #283645;
   position: relative;
+  width: 100%;
 }
 
 .menu__title {
@@ -49,11 +50,6 @@
 
 .menu__title--form {
   padding: 30px 40px 50px;
-}
-
-.menu__title--index {
-  display: flex;
-  flex-direction: column;
 }
 
 .menu__title--hand {
@@ -89,17 +85,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .menu {
-    width: 660px;
-  }
-
   .menu__toggle--opened .menu__toggle {
     top: -85px;
   }
 
   .menu__toggle--closed .menu__toggle {
     top: -85px;
-    left: 590px;
   }
 
   .menu__title {
@@ -123,11 +114,6 @@
     font-size: 40px;
     line-height: 50px;
     font-family: "OpenSansLight", "Arial", sans-serif;
-  }
-
-  .menu__title--index {
-    display: flex;
-    flex-direction: column;
   }
 }
 

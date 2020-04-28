@@ -99,7 +99,6 @@
 
   .features__item--last {
     display: block;
-    background-color: #ffffff;
     margin: 95px 25px 80px 330px;
     position: relative;
 
@@ -136,6 +135,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .features__list::after {
+    background-image: none;
+  }
+
   .features__subtitle {
     font-size: 30px;
     line-height: 30px;
