@@ -35,22 +35,14 @@
     align-items: stretch;
   }
 
-  .posts__content:nth-child(2n) {
-    margin-right: 20px;
+  .posts__content--first {
+    width: 620px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .posts__wrapper {
     margin: 0 130px;
-  }
-
-  .posts__content:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .posts__content:nth-child(3n) {
-    margin: 0 20px 20px;
   }
 
   .posts .post-first {
@@ -61,5 +53,9 @@
   .posts__title {
     width: 600px;
     margin: 90px auto;
+  }
+
+  .posts__content--first {
+    width: 940px;
   }
 }
