@@ -16,22 +16,20 @@
       <nav class="menu menu__toggle--opened">
         <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
-        <div class="menu__wrapper">
-          <ul class="menu__list site-list">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="menu__list site-list">
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </div>
     <h1 class="menu__title menu__title--hand menu__title--hand-opened">Взгляните на жизнь иначе!</h1>
@@ -100,75 +98,119 @@
       </div>
     </section>
 
-    <section class="reviwes">
-      <h2 class="reviwes__title visually-hidden">Отзывы</h2>
-      <div class="reviwes__list">
-        <blockquote class="reviews__item">
-          <cite class="reviews__author-name">Николай Петров</cite>
-          <p class="reviwes__author-subtitle">25 лет, водитель трамвая</p>
-          <p class="reviwes__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще я познакомился со своей будущей женой в
-            комментариях к выложенной фотографии!»</p>
-        </blockquote>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title visually-hidden">Отзывы</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-subtitle">25 лет, водитель трамвая</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
       </div>
     </section>
 
     <section class="rate">
-      <h2 class="rate__title">Тарифы</h2>
-      <table class="rate__list">
-        <tr>
-          <td>
-            <p class="rate__name">База</p>
-            <p class="rate__price">1,99 USD</p>
-          </td>
-          <td>
-            <span class="rate__flag">Хит</span>
-            <p class="rate__name">Стандарт</p>
-            <p class="rate__ptice">3,99 USD</p>
-          </td>
-          <td>
-            <p class="rate__name">Анлим</p>
-            <p class="rate__price">9,99 USD</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="rate__function">Розовый фильтр</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="rate__function">Смайлики</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="rate__function">Комментарии</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
+      <div class="container">
+        <h2 class="rate__title visually-hidden">Тарифы</h2>
+        <table class="rate__list">
+          <tr class="rate__row-1">
+            <td>&nbsp;</td>
+            <td class="rate__col">
+              <p class="rate__name rate__name--base">База</p>
+              <p class=" rate__price">1,99 USD</p>
+            </td>
+            <td class="rate__col">
+              <span class="rate__flag"><span class="rate__flag-text">Хит</span></span>
+              <p class="rate__name rate__name--standard">Стандарт</p>
+              <p class="rate__price">3,99 USD</p>
+            </td>
+            <td class="rate__col">
+              <p class="rate__name rate__name--unlimited">Анлим</p>
+              <p class="rate__price">9,99 USD</p>
+            </td>
+          </tr>
+          <tr class="rate__row-2">
+            <td class="rate__function">Розовый фильтр</td>
+            <td class="rate__function"></td>
+            <td class="rate__function"></td>
+            <td class="rate__function"></td>
+          </tr>
+          <tr class="rate__row-3">
+            <td class="rate__function">Смайлики</td>
+            <td class="rate__function"></td>
+            <td class="rate__function"></td>
+            <td class="rate__function"></td>
+          </tr>
+          <tr>
+            <td class="rate__function">Комментарии</td>
+            <td class="rate__function"></td>
+            <td class="rate__function"></td>
+            <td class="rate__function"></td>
+          </tr>
+        </table>
+      </div>
     </section>
 
-    <section class="contacts">
-      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <div>
-        <p class="contacts__subtitle">Звоните:</p>
-        <p class="contacts__contact">+7 (812) 555-66-66</p>
+    <section class="feedback">
+      <div class="container">
+        <h2 class="feedback__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="feedback__contacts">
+          <div>
+            <p class="feedback__subtitle">Звоните:</p>
+            <p class="feedback__contact">+7 (812) 555-66-66</p>
+          </div>
+          <div>
+            <p class="feedback__subtitle">Приезжайте в гости:</p>
+            <p class="feedback__contact">ул. Большая Конюшенная, 19/8</p>
+          </div>
+          <div>
+            <p class="feedback__subtitle">Пишите:</p>
+            <p class="feedback__contact">mail@htmlacademy.ru</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="contacts__subtitle">Приезжайте в гости:</p>
-        <p class="contacts__contact">ул. Большая Конюшенная, 19/8</p>
-      </div>
-      <div>
-        <p class="contacts__subtitle">Пишите:</p>
-        <p class="contacts__contact">mail@htmlacademy.ru</p>
+      <div class="feedback__map">
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@2x.png 2x, img/bg-map-tablet@1x.png 1x">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@2x.png 2x, img/bg-map-@1x.png 1x">
+          <img src="img/bg-map-mobile@1x.png 1x" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта">
+        </picture>
       </div>
     </section>
 
   </main>
+
+  <footer class="page-footer">
+    <div class="container flex">
+      <a class="page-footer__logo-image" href="#"><span class="visually-hidden">Логотип приложения Пинк</span></a>
+      <div class="page-footer__social social flex">
+        <ul class="social__list flex">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в
+                Твиттере</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в
+                Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в
+                YouTube</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright flex">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/menu-toggle.js"></script>
   <script src="js/page-header-color.js"></script>

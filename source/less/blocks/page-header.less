@@ -1,6 +1,6 @@
 .page-header__logo {
   width: 74px;
-  height: 27px;
+  height: 25px;
   background-image: url("../img/logo-pink-white-mobile.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -31,7 +31,6 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../../img/bg-back-mobile@2x.jpg");
-    background-size: contain;
   }
 }
 
@@ -67,7 +66,6 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: contain;
   }
 }
 
@@ -85,12 +83,16 @@
   (min-width: @mobile-width) and (min-resolution: @retina-dppx) {
   .page-header {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: contain;
+    background-size: cover;
   }
 
-  .page-header--large::before {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
+  .page-header--large {
     background-size: contain;
+
+    &::before {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: contain;
+    }
   }
 }
 
@@ -101,10 +103,10 @@
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: contain;
     }
   }
 
@@ -152,14 +154,15 @@
   (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
   .page-header {
     background-image: url("../img/bg-back-tablet@2x.jpg");
-    background-size: contain;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__menu {
     background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .page-header__logo {
@@ -171,10 +174,10 @@
     height: 395px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: -680px 0;
+    background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: contain;
     }
   }
 
@@ -195,6 +198,5 @@
   (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
   .page-header {
     background-image: url("../img/bg-back-desktop@2x.jpg");
-    background-size: contain;
   }
 }

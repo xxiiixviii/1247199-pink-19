@@ -2,73 +2,162 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="page-header page-header--opened">
-        <div class="page-header__menu page-header__menu--opened flex">
-            <a class="page-header__logo" href="index.html"><span class="visually-hidden">Логотип приложения
-                    Пинк</span></a>
-            <nav class="menu menu__toggle--opened">
-                <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть
-                        меню</span></button>
-                <div class="menu__wrapper">
-                    <ul class="menu__list site-list">
-                        <li class="site-list__item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="photo.html">Фотографии</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a class="site-list__item--current" href="#">Конкурс</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <h1 class="menu__title menu__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </header>
+  <header class="page-header page-header--opened">
+    <div class="page-header__menu page-header__menu--opened flex">
+      <a class="page-header__logo" href="index.html"><span class="visually-hidden">Логотип приложения
+          Пинк</span></a>
+      <nav class="menu menu__toggle--opened">
+        <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+        <ul class="menu__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item--current" href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="menu__title menu__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
 
-    <footer class="page-footer">
-        <div class="container flex">
-            <a class="page-footer__logo-image" href="#"><span class="visually-hidden">Логотип приложения Пинк</span></a>
-            <div class="page-footer__social social flex">
-                <ul class="social__list flex">
-                    <li class="social__item">
-                        <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в
-                                Твиттере</span></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в
-                                Фейсбуке</span></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в
-                                YouTube</span></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__copyright copyright flex">
-                <p class="copyright__text">Разработано</p>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
-                        class="visually-hidden">HTML
-                        Academy</span>
-                </a>
-            </div>
-        </div>
-    </footer>
+  <main class="page-main">
+    <section class="form container">
+      <div class="form__wrapper flex">
+        <h2 class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+          бонусную карту!</h2>
+          <p class="form__subtitle">Пожалуйста, заполните форму ниже:</p>
+        <form class="flex" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form__item">
+            <label for="lastname-field">Фамилия:</label>
+            <input type="text" name="lastname" id="lastname-field" placeholder="Укажите фамилию *">
+          </p>
+          <p class="form__item">
+            <label for="firstname-field">Имя:</label>
+            <input type="text" name="firstname" id="firstname-field" placeholder="Введите ваше имя *">
+          </p>
+          <p class="form__item">
+            <label for="middlename-field">Отчество:</label>
+            <input type="text" name="middlename" id="middlename-field" placeholder="Ну и отчество тоже">
+          </p>
+        </form>
 
-    <script src="js/menu-toggle.js"></script>
-    <script src="js/page-header-color.js"></script>
-    <script src="js/background.js"></script>
+        <fieldset class="survey">
+          <legend>С каким приложением путешествовали?</legend>
+          <ul class="survey__list">
+            <li class="survey__list-item">
+              <input type="radio" name="ios" id="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </li>
+            <li class="survey__list-item">
+              <input type="radio" name="android" id="android">
+              <label for="android">Pink на Android</label>
+            </li>
+            <li class="survey__list-item">
+              <input type="radio" name="windows" id="windows">
+              <label for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="contacts">
+          <legend>Контактная информация</legend>
+          <p class="contacts__item">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="contacts__item">
+            <label for="email-field">Адрес почты</label>
+            <input type="email" name="email" id="email-field" placeholder="Введите почту *">
+          </p>
+        </fieldset>
+
+        <fieldset class="achievement">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achievement__list">
+            <li class="achievement__item">
+              <input type="checkbox" name="" id="item-1" checked>
+              <label for="item-1">Сделал селфи с акулой</label>
+            </li>
+            <li class="achievement__item">
+              <input type="checkbox" name="" id="item-2" checked>
+              <label for="item-2">Обгорел на пляже</label>
+            </li>
+            <li class="achievement__item">
+              <input type="checkbox" name="" id="item-3">
+              <label for="item-3">Видел Чака Норриса</label>
+            </li>
+            <li class="achievement__item">
+              <input type="checkbox" name="" id="item-4">
+              <label for="item-4">Накупил сувениров</label>
+            </li>
+            <li class="achievement__item">
+              <input type="checkbox" name="" id="item-5" checked>
+              <label for="item-5">Удержал башню</label>
+            </li>
+            <li class="achievement__item">
+              <input type="checkbox" name="" id="item-6">
+              <label for="item-6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="appointment">
+          <legend>Опишите свои эмоции</legend>
+          <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+
+        <button class="form__button" type="submit">Отправить форму</button>
+        <small class="form__required-field"><sup>*</sup> — обязательные поля</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container flex">
+      <a class="page-footer__logo-image" href="#"><span class="visually-hidden">Логотип приложения Пинк</span></a>
+      <div class="page-footer__social social flex">
+        <ul class="social__list flex">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в
+                Твиттере</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в
+                Фейсбуке</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в
+                YouTube</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright flex">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
+            Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/page-header-color.js"></script>
+  <script src="js/background.js"></script>
 
 </body>

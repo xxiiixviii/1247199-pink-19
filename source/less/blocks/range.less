@@ -1,0 +1,30 @@
+.range {
+  display: flex;
+  position: relative;
+}
+
+.range__control {
+  position: absolute;
+  content: "";
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 44px;
+}
+
+.range__control--crop {
+  background-image: url("../img/icon-editor-crop.svg");
+  left: 100px;
+}
+
+.range__control--fill {
+  background-image: url("../img/icon-editor-fill.svg");
+  opacity: 0.3;
+  left: 160px;
+}
+
+.range__control--contrast {
+  background-image: url("../img/icon-editor-contrast.svg");
+  left: 250px;
+  opacity: 0.3;
+}
