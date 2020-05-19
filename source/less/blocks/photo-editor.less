@@ -10,14 +10,14 @@
 }
 
 .photo-editor__title {
-  margin: 50px 30px;
+  margin: 20px auto 45px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
 }
 
 .photo-editor__button {
-  padding: 40px 20px;
+  padding: 150px 20px 50px;
 }
 
 .photo-editor__button--post,
@@ -41,4 +41,11 @@
 .photo-editor__button--cancel {
   border: 3px solid #283645;
   opacity: 0.1;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-editor__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

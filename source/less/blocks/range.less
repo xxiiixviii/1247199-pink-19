@@ -14,18 +14,20 @@
 
 .range__control--crop {
   background-image: url("../img/icon-editor-crop.svg");
-  left: 100px;
+  left: 55px;
+  top: -5px;
 }
 
 .range__control--fill {
   background-image: url("../img/icon-editor-fill.svg");
   opacity: 0.3;
-  left: 160px;
+  left: 135px;
+  top: -5px;
 }
 
 .range__control--contrast {
   background-image: url("../img/icon-editor-contrast.svg");
-  left: 250px;
+  left: 225px;
   opacity: 0.3;
 }
 
@@ -33,6 +35,27 @@
   content: "";
   height: 1px;
   width: 320px;
+  position: absolute;
+  top: 115px;
   opacity: 0.1;
-  color: #000000;
+  background-color: #000000;
+}
+
+.range__scale--mobile {
+  width: 240px;
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+.range__toggle--mobile {
+  border-radius: 5px;
+  background-color: black;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 230px;
+  top: 70px;
 }

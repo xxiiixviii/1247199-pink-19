@@ -97,7 +97,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
+  .page-header--large {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 729px;
     display: flex;
@@ -108,6 +108,12 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .page-header {
+    min-height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
   }
 
   .page-header--opened {

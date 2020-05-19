@@ -1,5 +1,5 @@
 .form form {
-  margin: 0 20px;
+  margin: 0 20px 30px;
 }
 
 .form__wrapper flex {
@@ -23,16 +23,20 @@
   margin: 0;
   line-height: 30px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__item label {
-  margin: 0 0 15px 20px;
+  margin: 0 0 5px 20px;
+  display: block;
 }
 
 .form__item input {
   border: solid 2px #e5e5e5;
-  padding: 20px 80px 20px 20px;
-  margin-bottom: 30px;
+  padding: 25px 30px 20px 20px;
+  margin-bottom: 15px;
+  width: 225px;
 
   &::placeholder {
     font-size: 18px;
@@ -47,14 +51,19 @@
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-  padding: 20px 40px;
+  padding: 16px 45px;
   background-color: #2aab6d;
+  margin: 0 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .form__required-field {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  width: 185px;
+  margin: 0 auto;
 }
 
 .form__required-field sup {
